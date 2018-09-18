@@ -22,4 +22,6 @@ RUN mkdir -p $GOPATH/src/github.com/ethereum && \
 ADD run.sh /run.sh
 RUN chmod a+x /*.sh
 
+EXPOSE 8500
+
 ENTRYPOINT ["/run.sh"]

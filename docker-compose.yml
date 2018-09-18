@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  swarm:
+    image: coostendorp/swarm:latest
+    container_name: "swarm"
+    environment:
+      - PASSWORD=password
+    ports:
+      - "8500:8500"
+    network_mode: "host"
